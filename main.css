@@ -37,19 +37,40 @@ a {
 
 p {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom:30px;
 }
+
 
 h1 {
     /* font-family: "Audiowide", sans-serif; */
     /* font-family: "Montserrat Underline", serif; */
+
+}
+
+
+h1 {
     font-family: "Libre Barcode 39 Extended Text", serif;
+    color: white;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 100px;
+    /* font-size: 100px; */
     margin-bottom:10px;
+    font-size: clamp(50px, 5vw, 48px); /* Adaptive font size */
+    text-align: center; /* Centering for better responsiveness */
+    margin: 20px auto;
+
+}
+
+h1 a {
+    text-decoration: none; /* Removes default underline */
+    color: white; /* Dark text for readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+h1 a:hover {
+    color: #007BFF; /* Changes color on hover */
 }
 
 /* Navigation bar styles */
